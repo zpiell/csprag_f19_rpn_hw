@@ -1,8 +1,8 @@
 language: python
 python:
-  - "3.7"
+  - "3.5"
 install:
   - pip install coverage
-script: coverage rurn -m unittest discover
+script: coverage run -m unittest discover
 after_success:
   - bash <(currl -s https://codecov.io/bash)
